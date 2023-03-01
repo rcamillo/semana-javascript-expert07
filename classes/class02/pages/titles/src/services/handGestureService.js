@@ -29,7 +29,9 @@ export default class HandGestureService {
       const result = gestures.reduce((prev, next) =>
         prev.score > next ? prev : next,
       );
-      console.log("detected", gestureStrings[result.name]);
+
+      // console.log(gestures); is array with one or two objects - need create rule to 2 hands
+      console.log("detected ", gestureStrings[result.name]);
 
       const { x, y } = hand.keypoints.find(
         (keypoint) => keypoint.name === "index_finger_tip",

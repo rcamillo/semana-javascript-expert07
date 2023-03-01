@@ -3,6 +3,8 @@ const { GestureDescription, Finger, FingerCurl } = window.fp;
 const ScrollDownGesture = new GestureDescription("scroll-down"); // ✊️
 const ScrollUpGesture = new GestureDescription("scroll-up"); // 🖐
 const ScissorsGesture = new GestureDescription("scissors"); // ✌️
+const RockGesture = new GestureDescription("rock"); // 🤘
+const OKGesture = new GestureDescription("ok"); // 🤘
 
 // Rock
 // -----------------------------------------------------------------------------
@@ -41,12 +43,45 @@ ScissorsGesture.addCurl(Finger.Ring, FingerCurl.HalfCurl, 0.9);
 ScissorsGesture.addCurl(Finger.Pinky, FingerCurl.FullCurl, 1.0);
 ScissorsGesture.addCurl(Finger.Pinky, FingerCurl.HalfCurl, 0.9);
 
-const knownGestures = [ScrollDownGesture, ScrollUpGesture, ScissorsGesture];
+// Rock Sinal
+//------------------------------------------------------------------------------
+
+// index and pinky finger: stretched out
+RockGesture.addCurl(Finger.Index, FingerCurl.NoCurl, 1.0);
+RockGesture.addCurl(Finger.Pinky, FingerCurl.NoCurl, 1.0);
+
+// all other fingers: curled
+for (let finger of [Finger.Thumb, Finger.Middle, Finger.Ring]) {
+  RockGesture.addCurl(finger, FingerCurl.FullCurl, 1.0);
+  RockGesture.addCurl(finger, FingerCurl.HalfCurl, 0.5);
+}
+
+// OK Sinal
+//------------------------------------------------------------------------------
+
+OKGesture.addCurl(Finger.Thumb, FingerCurl.NoCurl, 1.0);
+OKGesture.addCurl(Finger.Thumb, FingerCurl.NoCurl, 0.9);
+
+// all other fingers: curled
+for (let finger of [Finger.Index, Finger.Middle, Finger.Ring, Finger.Pinky]) {
+  OKGesture.addCurl(finger, FingerCurl.FullCurl, 1.0);
+  OKGesture.addCurl(finger, FingerCurl.HalfCurl, 0.9);
+}
+
+const knownGestures = [
+  ScrollDownGesture,
+  ScrollUpGesture,
+  ScissorsGesture,
+  RockGesture,
+  OKGesture,
+];
 
 const gestureStrings = {
   "scroll-up": "🖐",
   "scroll-down": "✊️",
   scissors: "✌️",
+  rock: "🤘",
+  ok: "👍",
 };
 
 export { knownGestures, gestureStrings };
