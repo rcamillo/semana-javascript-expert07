@@ -16,7 +16,11 @@ export default class CardService {
       .filter(({ title }) => !!keyword ? title.toLowerCase().includes(keyword.toLowerCase()) : true)
 
     if(keyword) {
+<<<<<<< HEAD
       this.#cardListWorker.postMessage({ maxItems: 1e5 }) 
+=======
+      this.#cardListWorker.postMessage({ maxItems: 1e5 })
+>>>>>>> 472341e72f4c1870db8e30ec07fdc59b0f7c4101
     }
 
     const cards = titles.map(item => {
