@@ -73,14 +73,12 @@ export default class HandGestureView {
     if (finger !== "indexFinger") return;
 
     const tip = points.find((item) => item.name === "index_finger_tip");
-    const element = document.elementsFromPoint(tip.x, tip.y);
-
-    console.log({ element, tip });
+    const element = document.elementFromPoint(tip.x, tip.y);
     if (!element) return;
 
-    // this.#styler.toggleStyle(element, ":hover");
-    // fn();
-    // setTimeout(() => fn(), 500);
+    const fn = () => this.#styler.toggleStyle(element, ":hover");
+    fn();
+    setTimeout(() => fn(), 500);
   }
 
   clickOnElement(x, y) {
