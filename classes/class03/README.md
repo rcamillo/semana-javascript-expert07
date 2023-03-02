@@ -6,7 +6,12 @@ Marque esse projeto com uma estrela 🌟
 
 ## Preview
 
-<img width=100% src="./assets/demo-template-lg.gif">
+<<<<<<< HEAD
+
+=======
+
+> > > > > > > 9c11bdbb9d2ecfb31412c2a7f109e42857c1a0ad
+> > > > > > > <img width=100% src="./assets/demo-template-lg.gif">
 
 ## Pre-reqs
 
@@ -34,10 +39,20 @@ Marque esse projeto com uma estrela 🌟
 
 ### Considerações
 
+<<<<<<< HEAD
+
+=======
+
+> > > > > > > 9c11bdbb9d2ecfb31412c2a7f109e42857c1a0ad
+
 - Tire suas dúvidas sobre os desafios em nossa comunidade, o objetivo é você aprender de forma divertida. Surgiu dúvidas? Pergunte por lá!
 
 - Ao completar qualquer um dos desafios, envie no canal **#desafios** da comunidade no **Discord**
 
 ### Créditos ao Layout
 
+<<<<<<< HEAD
+
+- # Interface baseada no projeto [Streaming Service](https://codepen.io/Gunnarhawk/pen/vYJEwoM) de [gunnarhawk](https://github.com/Gunnarhawk)
 - Interface baseada no projeto [Streaming Service](https://codepen.io/Gunnarhawk/pen/vYJEwoM) de [gunnarhawk](https://github.com/Gunnarhawk)
+  > > > > > > > 9c11bdbb9d2ecfb31412c2a7f109e42857c1a0ad
