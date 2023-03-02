@@ -1188,6 +1188,7 @@ a {
 }
 
 #hands {
+<<<<<<< HEAD
     /* faz com que elementos possam ser clicaveis */
     pointer-events: none;
     /* faz ficar em cima dos elementos */
@@ -1195,3 +1196,14 @@ a {
     /* fica à frente dos elementos */
     z-index: 15;
 }
+=======
+    /* faz com que elementos possam ser clicavel */
+    pointer-events: none;
+
+    /* faz ficar em cima dos elementos */
+    position: fixed;
+
+    /* fica à frente dos elementos */
+    z-index: 2;
+}
+>>>>>>> 9c11bdbb9d2ecfb31412c2a7f109e42857c1a0ad
